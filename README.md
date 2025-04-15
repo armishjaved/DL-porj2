@@ -44,7 +44,7 @@ This project used:
 ## 📁 Directory Structure
 
 ```
-├── dlproj.py                 # Main script: loading, training, evaluation
+├── dlproj.ipynb                 # Main script: loading, training, evaluation
 ├── README.md                # This file
 ├── confusion_matrix.png     # Evaluation visualization
 ├── Lora Roberta Report.tex  # Final project report (LaTeX)
@@ -57,16 +57,19 @@ This project used:
 ```bash
 pip install torch transformers datasets peft scikit-learn matplotlib seaborn
 ```
-
 ---
+## 🚀 Training the Model
 
-## 🧠 How to Use
+To begin training, simply run all cells in sequence. The notebook:
+- Loads the AG News dataset
+- Tokenizes the text using RoBERTa's tokenizer
+- Injects LoRA adapters into the attention modules
+- Fine-tunes the model using Hugging Face's Trainer API
+- Evaluates performance on a validation set
+- Visualizes the confusion matrix and metrics
 
-### 1. Train the Model
+Make sure your environment includes GPU support (if available) for faster training. You can enable mixed precision by default.
 
-```bash
-python dlproj.py
-```
 ---
 
 ## 📌 Future Work
