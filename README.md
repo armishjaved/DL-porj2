@@ -46,10 +46,7 @@ This project used:
 ```
 ├── dlproj.py                 # Main script: loading, training, evaluation
 ├── README.md                # This file
-├── final_model/             # Saved model checkpoints
-├── inference_output.csv     # Predictions on test set
 ├── confusion_matrix.png     # Evaluation visualization
-├── test_unlabelled.pkl      # (Optional) Unlabeled test data (if available)
 ├── Lora Roberta Report.tex  # Final project report (LaTeX)
 ```
 
@@ -70,12 +67,6 @@ pip install torch transformers datasets peft scikit-learn matplotlib seaborn
 ```bash
 python dlproj.py
 ```
-
-### 2. Run Inference
-
-If `test_unlabelled.pkl` is present:
-- Predictions are saved to `inference_output.csv`
-
 ---
 
 ## 📌 Future Work
@@ -84,21 +75,3 @@ If `test_unlabelled.pkl` is present:
 - Extend to multi-label or multilingual datasets
 - Use teacher-student distillation to improve efficiency
 - Explore LoRA merging for multi-task models
-
----
-
-## 🧾 Citations
-
-- Hu et al., (2021). *LoRA: Low-Rank Adaptation of Large Language Models*. arXiv:2106.09685  
-- Wolf et al., (2020). *Transformers: State-of-the-art NLP*. EMNLP  
-- Hugging Face PEFT: https://github.com/huggingface/peft  
-- AG News Dataset: https://huggingface.co/datasets/ag_news
-
----
-
-## 🧑‍💻 Authors
-
-Your Name(s)  
-Department of Computer Science  
-Your University  
-📧 your.email@example.edu
