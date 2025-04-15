@@ -7,7 +7,7 @@ This repository contains the implementation and project report for fine-tuning `
 
 ---
 
-## 🚀 Project Summary
+## Project Summary
 
 - **Model:** `roberta-base` with LoRA adapters (frozen backbone)
 - **Fine-tuning Technique:** [LoRA](https://arxiv.org/abs/2106.09685) via Hugging Face [PEFT](https://github.com/huggingface/peft)
@@ -17,7 +17,7 @@ This repository contains the implementation and project report for fine-tuning `
 
 ---
 
-## 🧱 Architecture and Approach
+## Architecture and Approach
 
 This project used:
 - **LoRA Adapters** injected into: `query`, `key`, `value`
@@ -27,7 +27,7 @@ This project used:
 
 ---
 
-## 🧪 Evaluation Results
+## Evaluation Results
 
 | Metric               | Score     |
 |----------------------|-----------|
@@ -37,11 +37,11 @@ This project used:
 | F1 Score             | 94.1%     |
 | Trainable Parameters | ~870,000  |
 
-✅ A confusion matrix is generated and saved as `confusion_matrix.png`.
+A confusion matrix is generated and saved as `confusion_matrix.png`.
 
 ---
 
-## 📁 Directory Structure
+## Directory Structure
 
 ```
 ├── dlproj.ipynb                 # Main script: loading, training, evaluation
@@ -52,13 +52,13 @@ This project used:
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 pip install torch transformers datasets peft scikit-learn matplotlib seaborn
 ```
 ---
-## 🚀 Training the Model
+## Training the Model
 
 To begin training, simply run all cells in sequence. The notebook:
 - Loads the AG News dataset
@@ -72,7 +72,7 @@ Make sure your environment includes GPU support (if available) for faster traini
 
 ---
 
-## 📌 Future Work
+## Future Work
 
 - Apply [QLoRA](https://arxiv.org/abs/2305.14314) for quantized fine-tuning
 - Extend to multi-label or multilingual datasets
