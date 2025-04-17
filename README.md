@@ -44,10 +44,9 @@ A confusion matrix is generated and saved as `confusion_matrix.png`.
 ## Directory Structure
 
 ```
-├── dlproj.ipynb                 # Main script: loading, training, evaluation
+├── dlproj.ipynb             # Main script: loading, training, evaluation
 ├── README.md                # This file
-├── confusion_matrix.png     # Evaluation visualization
-├── Lora Roberta Report.tex  # Final project report (LaTeX)
+├── confusion_matrix.png     # Evaluation visualization  
 ```
 
 ---
