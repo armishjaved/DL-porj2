@@ -13,7 +13,7 @@ This repository contains the implementation and project report for fine-tuning `
 - **Fine-tuning Technique:** [LoRA](https://arxiv.org/abs/2106.09685) via Hugging Face [PEFT](https://github.com/huggingface/peft)
 - **Dataset:** [AG News](https://huggingface.co/datasets/ag_news)
 - **Trainable Parameters:** ~980,740
-- **Validation Accuracy:** **92.3%**
+- **Validation Accuracy:** **93.3%**
 
 ---
 
@@ -31,10 +31,10 @@ This project used:
 
 | Metric               | Score     |
 |----------------------|-----------|
-| Accuracy             | 92.3%     |
-| Precision            | 92.4%     |
-| Recall               | 92.3%     |
-| F1 Score             | 92.3%     |
+| Accuracy             | 93.3%     |
+| Precision            | 93.3%     |
+| Recall               | 93.3%     |
+| F1 Score             | 93.3%     |
 | Trainable Parameters | ~980,740  |
 
 A confusion matrix is generated and saved as `confusion_matrix.png`.
@@ -46,7 +46,8 @@ A confusion matrix is generated and saved as `confusion_matrix.png`.
 ```
 ├── dlproj.ipynb             # Main script: loading, training, evaluation
 ├── README.md                # This file
-├── confusion_matrix.png     # Evaluation visualization  
+├── confusion_matrix.png     # Evaluation visualization
+├── final model              # folder that contains the final model checkpoint that can be used to regenerate our results
 ```
 
 ---
